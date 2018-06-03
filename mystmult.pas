@@ -1,4 +1,4 @@
-program logmaint;
+program mystmult;
 
 {                  Swiss Army Knife for Mystic BBS Program
 
@@ -30,7 +30,7 @@ uses
   Classes, sysutils, strutils, DateUtils, crt;
 
 Const
-  prog   = 'RCS Log Maintenance';
+  prog   = 'RCS MysticBBS MultiTool';
   ver    = '1.0.1.4';
   author = 'DRPanther(RCS)';
 
