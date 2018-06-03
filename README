@@ -1,0 +1,14 @@
+This program is still in its infancy. 
+
+As of right now, the program will take the log files from Mystic BBS, and place them in sub-directories based on the date. This will keep the log files in the current Mystic BBS directory to a managable size.
+
+There is also an option to create a report of the incoming and outgoing messages per echo. This report is sorted now, by the number of incoming messages. 
+
+As time permits, I would like to add another report generation of the amount of data being transferred from nodes that connect to the system. For example:
+
+Node         Incoming        Outgoing
+1:317/3      1,234,567       1,234,567
+etc...
+
+I envision this program to have many different tools that can be used by the Mystic BBS sysop.
+
