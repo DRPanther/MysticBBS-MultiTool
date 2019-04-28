@@ -2007,7 +2007,7 @@ begin
   temp:=lastrec+1;
   //reset(m);
   //seek(m,1);
-  for d:=1 to lastrec-1 do begin
+  for d:=1 to lastrec do begin
     seek(m,d);
     read(m,mail);
     maildata[d].mailer:=mail.mailer;
