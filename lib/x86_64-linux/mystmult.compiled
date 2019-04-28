@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/ppcx64" Date="1535574856"/>
+  <Params Value=" -MObjFPC -Scghi -Cg -O1 -g -gl -l -vewnhilbq -Fi/home/dan/dan/MysticBBS-MultiTool/lib/x86_64-linux -Fu/home/dan/dan/MysticBBS-MultiTool/ -FU/home/dan/dan/MysticBBS-MultiTool/lib/x86_64-linux/ -FE/home/dan/dan/MysticBBS-MultiTool/linux-x86_64/ mystmult.pas"/>
+</CONFIG>
