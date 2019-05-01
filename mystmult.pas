@@ -72,7 +72,7 @@ Type
   end;
 
   mailerlog = Record
-    mailer  : string[50];
+    mailer  : string[60];
     matches : integer;
   end;
 
@@ -2015,7 +2015,72 @@ begin
   end;
   for d:=1 to lastrec-1 do begin
     for z:=d+1 to lastrec-1 do begin
-      if (maildata[d].mailer)<(maildata[z].mailer) then begin
+      if (UpperCase(maildata[d].mailer[1]))>(UpperCase(maildata[z].mailer[1])) then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))>(UpperCase(maildata[z].mailer[2]))) then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))>(UpperCase(maildata[z].mailer[3])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))>(UpperCase(maildata[z].mailer[4])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))>(UpperCase(maildata[z].mailer[5])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))=(UpperCase(maildata[z].mailer[5])))and((Uppercase(maildata[d].mailer[6]))>(UpperCase(maildata[z].mailer[6])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))=(UpperCase(maildata[z].mailer[5])))and((Uppercase(maildata[d].mailer[6]))=(UpperCase(maildata[z].mailer[6])))and((UpperCase(maildata[d].mailer[7]))>(UpperCase(maildata[z].mailer[7])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))=(UpperCase(maildata[z].mailer[5])))and((Uppercase(maildata[d].mailer[6]))=(UpperCase(maildata[z].mailer[6])))and((UpperCase(maildata[d].mailer[7]))=(UpperCase(maildata[z].mailer[7])))and((UpperCase(maildata[d].mailer[8]))>(UpperCase(maildata[z].mailer[8])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))=(UpperCase(maildata[z].mailer[5])))and((Uppercase(maildata[d].mailer[6]))=(UpperCase(maildata[z].mailer[6])))and((UpperCase(maildata[d].mailer[7]))=(UpperCase(maildata[z].mailer[7])))and((UpperCase(maildata[d].mailer[8]))=(UpperCase(maildata[z].mailer[8])))and((UpperCase(maildata[d].mailer[9]))>(UpperCase(maildata[z].mailer[9])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))=(UpperCase(maildata[z].mailer[5])))and((Uppercase(maildata[d].mailer[6]))=(UpperCase(maildata[z].mailer[6])))and((UpperCase(maildata[d].mailer[7]))=(UpperCase(maildata[z].mailer[7])))and((UpperCase(maildata[d].mailer[8]))=(UpperCase(maildata[z].mailer[8])))and((UpperCase(maildata[d].mailer[9]))=(UpperCase(maildata[z].mailer[9])))and((UpperCase(maildata[d].mailer[10]))>(UpperCase(maildata[z].mailer[10])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))=(UpperCase(maildata[z].mailer[5])))and((Uppercase(maildata[d].mailer[6]))=(UpperCase(maildata[z].mailer[6])))and((UpperCase(maildata[d].mailer[7]))=(UpperCase(maildata[z].mailer[7])))and((UpperCase(maildata[d].mailer[8]))=(UpperCase(maildata[z].mailer[8])))and((UpperCase(maildata[d].mailer[9]))=(UpperCase(maildata[z].mailer[9])))and((UpperCase(maildata[d].mailer[10]))=(UpperCase(maildata[z].mailer[10])))and((UpperCase(maildata[d].mailer[11]))>(UpperCase(maildata[z].mailer[11])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))=(UpperCase(maildata[z].mailer[5])))and((Uppercase(maildata[d].mailer[6]))=(UpperCase(maildata[z].mailer[6])))and((UpperCase(maildata[d].mailer[7]))=(UpperCase(maildata[z].mailer[7])))and((UpperCase(maildata[d].mailer[8]))=(UpperCase(maildata[z].mailer[8])))and((UpperCase(maildata[d].mailer[9]))=(UpperCase(maildata[z].mailer[9])))and((UpperCase(maildata[d].mailer[10]))=(UpperCase(maildata[z].mailer[10])))and((UpperCase(maildata[d].mailer[11]))=(UpperCase(maildata[z].mailer[11])))and((UpperCase(maildata[d].mailer[12]))>(UpperCase(maildata[z].mailer[12])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))=(UpperCase(maildata[z].mailer[5])))and((Uppercase(maildata[d].mailer[6]))=(UpperCase(maildata[z].mailer[6])))and((UpperCase(maildata[d].mailer[7]))=(UpperCase(maildata[z].mailer[7])))and((UpperCase(maildata[d].mailer[8]))=(UpperCase(maildata[z].mailer[8])))and((UpperCase(maildata[d].mailer[9]))=(UpperCase(maildata[z].mailer[9])))and((UpperCase(maildata[d].mailer[10]))=(UpperCase(maildata[z].mailer[10])))and((UpperCase(maildata[d].mailer[11]))=(UpperCase(maildata[z].mailer[11])))and((UpperCase(maildata[d].mailer[12]))=(UpperCase(maildata[z].mailer[12])))and((UpperCase(maildata[d].mailer[13]))>(UpperCase(maildata[z].mailer[13])))then begin
+        maildata[temp]:=maildata[d];
+        maildata[d]:=maildata[z];
+        maildata[z]:=maildata[temp];
+      end;
+      if ((UpperCase(maildata[d].mailer[1]))=(UpperCase(maildata[z].mailer[1])))and((UpperCase(maildata[d].mailer[2]))=(UpperCase(maildata[z].mailer[2])))and((UpperCase(maildata[d].mailer[3]))=(UpperCase(maildata[z].mailer[3])))and((UpperCase(maildata[d].mailer[4]))=(UpperCase(maildata[z].mailer[4])))and((Uppercase(maildata[d].mailer[5]))=(UpperCase(maildata[z].mailer[5])))and((Uppercase(maildata[d].mailer[6]))=(UpperCase(maildata[z].mailer[6])))and((UpperCase(maildata[d].mailer[7]))=(UpperCase(maildata[z].mailer[7])))and((UpperCase(maildata[d].mailer[8]))=(UpperCase(maildata[z].mailer[8])))and((UpperCase(maildata[d].mailer[9]))=(UpperCase(maildata[z].mailer[9])))and((UpperCase(maildata[d].mailer[10]))=(UpperCase(maildata[z].mailer[10])))and((UpperCase(maildata[d].mailer[11]))=(UpperCase(maildata[z].mailer[11])))and((UpperCase(maildata[d].mailer[12]))=(UpperCase(maildata[z].mailer[12])))and((UpperCase(maildata[d].mailer[13]))=(UpperCase(maildata[z].mailer[13])))and((UpperCase(maildata[d].mailer[14]))>(UpperCase(maildata[z].mailer[14])))then begin
         maildata[temp]:=maildata[d];
         maildata[d]:=maildata[z];
         maildata[z]:=maildata[temp];
@@ -2043,7 +2108,13 @@ begin
   writeln(mailreport,'       Mailer                                          Count');
   writeln(mailreport,PadCenter('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-',78));
   writeln(mailreport);
-  for x:=1 to lastrec-2 do writeln(mailreport,'       '+PadRight(maildata[x].mailer,40)+'        '+PadRight(IntToStr(maildata[x].matches),20));
+  for x:=1 to lastrec-2 do
+    begin
+      if maildata[x].mailer<>'' then
+      begin
+        writeln(mailreport,'    '+PadRight(maildata[x].mailer,55)+'             '+PadRight(IntToStr(maildata[x].matches),20));
+      end;
+    end;
   writeln(mailreport);
   writeln(mailreport,PadCenter('-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-',78));
   writeln(mailreport);
