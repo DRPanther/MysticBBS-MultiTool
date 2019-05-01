@@ -8,7 +8,7 @@
         <Filename Value="mystmult.pas"/>
         <IsPartOfProject Value="True"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="2001"/>
+        <TopLine Value="2099"/>
         <CursorPos Y="2016"/>
         <UsageCount Value="204"/>
         <Loaded Value="True"/>
@@ -144,15 +144,6 @@
     </JumpHistory>
   </ProjectSession>
   <Debugging>
-    <BreakPoints Count="1">
-      <Item1>
-        <Kind Value="bpkSource"/>
-        <WatchScope Value="wpsLocal"/>
-        <WatchKind Value="wpkWrite"/>
-        <Source Value="mystmult.pas"/>
-        <Line Value="2016"/>
-      </Item1>
-    </BreakPoints>
     <Watches Count="4">
       <Item1>
         <Expression Value="maildata[d].mailer[1]"/>
