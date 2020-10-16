@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<CONFIG>
-  <Compiler Value="C:\lazarus\fpc\3.0.2\bin\i386-win32\fpc.exe" Date="1247517510"/>
-  <Params Value=" -MObjFPC -Scghi -O1 -g -gl -l -vewnhilbq -FiC:\dan\MysticBBS-MultiTool\lib\i386-win32 -FuC:\dan\MysticBBS-MultiTool\ -FUC:\dan\MysticBBS-MultiTool\lib\i386-win32\ -FEC:\dan\MysticBBS-MultiTool\win32-i386\ mystmult.pas"/>
-</CONFIG>
